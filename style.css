@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -51,25 +52,39 @@ video {
     display: flex;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.65);
+    font-family: 'Reggae One', cursive;
 }
 
 .input-container {
     position: relative;
-    top: 20px;
+    /* top: 85px; */
+    right: 45%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
 }
 
 h1 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 35px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 
 /* Form */
 
 .form {
-    width: 480px;
+    width: 520px;
 }
 
 label {
@@ -85,6 +100,7 @@ input {
     border-radius: 20px;
     background: #fff;
     outline: none;
+    font-family: 'Reggae One', cursive;
 }
 
 
@@ -101,6 +117,12 @@ button {
     color: white;
     cursor: pointer;
     outline: none;
+    font-family: 'Reggae One', cursive;
+}
+
+button:hover {
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
 }
 
 
@@ -111,6 +133,7 @@ ul {
 }
 
 li {
+    display: inline-block;
     font-size: 30px;
     list-style-type: none;
     padding: 10px;
@@ -129,6 +152,29 @@ li span {
 .complete {
     position: relative;
     top: 60px;
+}
+
+.complete-title {
+    animation: complete 4s infinite;
+    -webkit-animation: complete 4s infinite;
+}
+
+@keyframes complete {
+    0% {
+        color: rgb(255, 13, 13);
+    }
+    25% {
+        color: rgb(64, 233, 13);
+    }
+    50% {
+        color: brown;
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        color: rgb(0, 38, 253);
+    }
 }
 
 
@@ -159,15 +205,15 @@ li span {
         width: unset;
     }
     input {
-        width: 93%;
+        width: 240px;
     }
     h1 {
         font-size: 20px;
     }
     li {
-        font-size: 15px;
+        font-size: 12px;
     }
     li span {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
